@@ -1,0 +1,100 @@
+.parentContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+.formContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6rem;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.topContainer{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.formHouse{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.inputContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 0.5rem; */
+    justify-content: start;
+    align-items: start;
+}
+
+.labelSelect{
+    display: none;
+}
+
+.inputContainer input{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    padding-left: 0.5rem;
+    border: none;
+    /* border: 1px solid #c4c4c4; */
+    border-radius: 0.2rem;
+    background-color: rgba(0, 0, 1, 0.2);
+}
+
+.inputContainer input::placeholder{
+    color: #ffffff;
+}
+
+.buttonContainer{
+    width: 82%;
+    height: auto;
+}
+
+.buttonContainer button{
+    width: 100%;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: black;
+    color: #ffffff;
+}
+
+.bottomContainer{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.textContainer{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
