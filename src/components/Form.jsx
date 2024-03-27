@@ -31,11 +31,30 @@ const Form = ()=>{
 
 
 
-    const [page, setPage] = useState(false)
+    const [page, setPage] = useState(true)
 
     const toggle = ()=>{
         const presentState = page
         setPage(!presentState)
+    }
+
+
+    const auth = ()=>{
+        if(
+            userDetail.firstName === "" ||
+            userDetail.lastName === "" ||
+            userDetail.email === "" ||
+            userDetail.userName === "" ||
+            userDetail.password === "" 
+        ){
+            alert(`Provide All Details`)
+        }else if(
+            userDetail.password.length < 5
+        ){
+            alert(`Password too short`)
+        }else{
+            alert(`Welcome!!!`)
+        }
     }
 
     return(
@@ -89,7 +108,7 @@ const Form = ()=>{
                         </div>
 
                         <div className={formStyle.buttonContainer}>
-                            <button>Submit</button>
+                            <button type="submit" onClick={auth}>Submit</button>
                         </div>
                     </form>
                 </div>
@@ -105,7 +124,7 @@ const Form = ()=>{
                             <p>Password: {userDetail.password}</p>
                     </div>
                 </div>
-            </div> : `` }
+            </div> : "" }
             
         </div>
         
