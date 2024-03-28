@@ -40,7 +40,7 @@ const Form = ()=>{
 
 
     const auth = ()=>{
-        if(
+        if (
             userDetail.firstName === "" ||
             userDetail.lastName === "" ||
             userDetail.email === "" ||
@@ -48,11 +48,10 @@ const Form = ()=>{
             userDetail.password === "" 
         ){
             alert(`Provide All Details`)
-        }else if(
-            userDetail.password.length < 5
-        ){
+        } else if (
+            userDetail.password.length < 5) {
             alert(`Password too short`)
-        }else{
+        } else {
             alert(`Welcome!!!`)
         }
     }
