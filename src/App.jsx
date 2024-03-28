@@ -15,8 +15,10 @@ function App() {
 
 
   return (
+  
     <>
-     <BrowserRouter>
+        <div>
+        <BrowserRouter>
      <NavBar/>
      <Effect/>
      
@@ -29,8 +31,7 @@ function App() {
 
         
      </BrowserRouter>
+        </div>
     </>
   )
 }
-
-export default App
