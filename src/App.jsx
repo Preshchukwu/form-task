@@ -10,6 +10,8 @@ import About from './components/About'
 import Services from './components/Services'
 import Error from './components/Error'
 import Effect from './components/Effect'
+import Card from './components/Card'
+import { Lamp } from './components/UseEffect'
 
 function App() {
 
@@ -21,6 +23,9 @@ function App() {
         <BrowserRouter>
      <NavBar/>
      <Effect/>
+     <Card name="Presh" gender="male" email="p@gmail"></Card>
+     <Lamp></Lamp>
+     
      
         <Routes>
           <Route path='/' element={<Home/>} />
@@ -35,3 +40,5 @@ function App() {
     </>
   )
 }
+
+export default App
